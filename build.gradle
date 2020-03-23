@@ -1,0 +1,21 @@
+
+
+plugins {
+    id 'java'
+}
+
+group 'com.github.amuguelove'
+version '1.0.0-SNAPSHOT'
+
+repositories {
+    jcenter()
+}
+
+ext {
+    jmhVersion = '1.23'
+}
+
+dependencies {
+    annotationProcessor "org.openjdk.jmh:jmh-generator-annprocess:${jmhVersion}"
+    implementation "org.openjdk.jmh:jmh-core:${jmhVersion}"
+}
